@@ -1,0 +1,86 @@
+/*=========================================================================================================
+    Header Area
+===========================================================================================================*/
+
+.header-area {
+  background: $primary-color;
+}
+.header-area.is-sticky {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  z-index: 666;
+  animation: fadeInDown 1s both 0.2s;
+}
+
+.header-menu-list {
+  text-align: center;
+  li {
+    display: inline-block;
+    padding-right: 98px;
+    margin-right: 16px;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 80px;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.24);
+      right: 0px;
+      top: 50%;
+    }
+    a {
+      padding: 28px 0px;
+      color: #c7e8ca;
+      display: inline-block;
+      line-height: 24px;
+      &:hover {
+        color: $white-color;
+      }
+    }
+    &:last-child {
+      padding: 0;
+      margin: 0;
+      &::after {
+        display: none;
+      }
+    }
+  }
+  li.active {
+    a {
+      color: $white-color;
+    }
+  }
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1600px) {
+  .header-menu-list li::after {
+    width: 48px;
+  }
+  .header-menu-list li {
+    padding-right: 66px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  .header-area {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .header-area {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header-area {
+    display: none;
+  }
+}
+
+/*=========================================================================================================
+    End Header Area
+===========================================================================================================*/

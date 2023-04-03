@@ -1,0 +1,260 @@
+/*=========================================================================================================
+    Experience  Area
+===========================================================================================================*/
+.experience-area {
+  padding: 72px 0px 120px;
+}
+.experience-section-head {
+  margin-bottom: 32px;
+  padding-left: 100px;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 76px;
+    height: 76px;
+    left: 0;
+    top: 0;
+    background-image: url("../img/vector-shape/shape-3.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+.exp-section-head-title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 140%;
+  color: $title-color;
+  position: relative;
+  padding-bottom: 18px;
+  margin-bottom: 24px;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 115px;
+    height: 3px;
+    background: $primary-color;
+    border-radius: 4px;
+    bottom: -1.5px;
+    left: 0;
+  }
+}
+.exp-section-head-text {
+  margin: 0;
+}
+
+.experience-single-card {
+  position: relative;
+  margin-top: 48px;
+  background: $white-color;
+  padding: 40px 32px;
+  transition: all 0.3s ease;
+  text-align: center;
+  border-radius: 24px;
+  z-index: 2;
+  max-height: 420px;
+  height: 420px;
+  overflow: hidden;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("../img/expertise-icon/card-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 24px;
+    z-index: -1;
+  }
+}
+.exp-card-icon {
+  margin-bottom: 32px;
+  img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+  }
+}
+.exp-card-number {
+  display: block;
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  font-weight: 600;
+  font-size: 96px;
+  line-height: 100%;
+  text-align: right;
+  color: #f6f6f7;
+  transition: all 0.3s ease;
+}
+.exp-card-content-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 120%;
+  margin-bottom: 16px;
+  color: $title-color;
+}
+.exp-card-content-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  margin: 0;
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1550px) {
+  .exp-card-icon img {
+    width: 80px;
+    height: 80px;
+  }
+  .exp-section-head-title {
+    font-size: 44px;
+  }
+  .exp-card-icon {
+    margin-bottom: 32px;
+  }
+  .exp-card-number {
+    top: 34px;
+    font-size: 60px;
+  }
+  .exp-card-content-title {
+    font-size: 24px;
+  }
+  .exp-card-content-text {
+    font-size: 16px;
+  }
+  .experience-single-card {
+    padding: 24px 24px 32px 24px;
+  }
+  .experience-section-head {
+    margin-bottom: 8px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  .exp-section-head-title {
+    font-size: 38px;
+  }
+  .exp-card-icon img {
+    width: 80px;
+    height: 80px;
+  }
+  .exp-card-icon {
+    margin-bottom: 32px;
+  }
+  .exp-card-number {
+    top: 34px;
+    font-size: 60px;
+  }
+  .exp-card-content-title {
+    font-size: 22px;
+  }
+  .exp-card-content-text {
+    font-size: 16px;
+  }
+  .experience-single-card {
+    padding: 24px 24px 32px 24px;
+  }
+  .experience-single-card.add-margin {
+    margin-top: 48px;
+  }
+  .experience-single-card.card-5 {
+    margin-top: 48px;
+  }
+  .experience-single-card.card-7 {
+    margin-top: 48px;
+  }
+  .experience-section-head {
+    margin-bottom: 8px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .exp-section-head-title {
+    font-size: 28px;
+  }
+  .exp-card-icon img {
+    width: 80px;
+    height: 80px;
+  }
+  .exp-card-icon {
+    margin-bottom: 32px;
+  }
+  .exp-card-number {
+    top: 34px;
+    font-size: 60px;
+  }
+  .exp-card-content-title {
+    font-size: 22px;
+  }
+  .exp-card-content-text {
+    font-size: 16px;
+  }
+  .experience-single-card {
+    padding: 24px 24px 32px 24px;
+  }
+  .experience-single-card.add-margin {
+    margin-top: 48px;
+  }
+  .experience-single-card.card-5 {
+    margin-top: 48px;
+  }
+  .experience-single-card.card-7 {
+    margin-top: 48px;
+  }
+  .experience-section-head {
+    margin-bottom: 8px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .exp-section-head-title {
+    font-size: 28px;
+  }
+  .exp-card-icon img {
+    width: 80px;
+    height: 80px;
+  }
+  .exp-card-icon {
+    margin-bottom: 32px;
+  }
+  .exp-card-number {
+    top: 34px;
+    font-size: 60px;
+  }
+  .exp-card-content-title {
+    font-size: 22px;
+  }
+  .exp-card-content-text {
+    font-size: 16px;
+  }
+  .experience-single-card {
+    padding: 24px 24px 32px 24px;
+  }
+  .experience-single-card.add-margin {
+    margin-top: 48px;
+  }
+  .experience-single-card.card-5 {
+    margin-top: 48px;
+  }
+  .experience-single-card.card-7 {
+    margin-top: 48px;
+  }
+  .experience-section-head {
+    margin-bottom: 8px;
+  }
+  .experience-section-head {
+    padding-left: 0;
+  }
+  .experience-section-head::before {
+    left: initial;
+    right: 0;
+  }
+}
+
+/*=========================================================================================================
+    End Experience Area
+===========================================================================================================*/
